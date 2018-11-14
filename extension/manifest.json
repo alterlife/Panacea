@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Panecia",
+  "description": "Remove addictive UI elements from popular websites.",
+  "homepage_url": "http://alterlife.org/rhb",
+  "version": "0.0.1",
+  "browser_action": {
+   "default_popup": "popup.html",
+   "default_title": "Panecia"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "css": ["scripts/youtube/style.css"],
+      "js": ["scripts/youtube/script.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "webNavigation"
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  }
+}

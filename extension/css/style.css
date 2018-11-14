@@ -1,0 +1,15 @@
+body {
+  min-width: 400px;
+}
+
+h1 {
+  font-size: 130%;
+}
+
+.panel-heading { font-weight: bold; }
+
+@media screen and (max-width: 360px) {
+  body {
+    width: 100%;
+  }
+}
